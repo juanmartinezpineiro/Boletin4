@@ -11,36 +11,29 @@ package boletin4_3;
  */
 public class Circulo {
 
-    //Inicializar las variables de caracter privado
     private double radio;
-    private final double PI;
-
-    //Constructor por defecto
-    public Circulo() {
-        this.PI = 3.14;
-
+    private final double PI = 3.14;
+    
+    public Circulo (){
+        
     }
-
-    //Parametros
-    public Circulo(double radio) {
-        this.PI = 3.14;
+    
+    public Circulo (double radio){
+        this.radio = radio;
+        
+    }
+    public double getRadio(){
+        return radio;
+    }
+    public void setRadio(double radio){
         this.radio = radio;
     }
     
-    //Metodos de acceso
-    
-
-    Circulo(int i, int i0) {
-        this.PI = 3.14;
-
-    }
-
-    public double calcularArea() {
+    public double calcularArea(){
         double area = PI * Math.pow(radio, 2);
         return area;
     }
-
-    public double calculaPerimetro() {
+    public double calcularPerimetro(){
         double perimetro = 2 * PI * radio;
         return perimetro;
     }

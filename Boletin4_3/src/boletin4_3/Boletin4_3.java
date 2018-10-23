@@ -16,12 +16,13 @@ public class Boletin4_3 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Circulo circulo1 = new Circulo (20,30);
-//        System.out.println(circulo1.getRadio());
-//        circulo1.setRadio(6.5);
-//        System.out.println(circulo1.getRadio());
+       
+        Circulo circulo1 = new Circulo(5.5);
+        System.out.println(circulo1.getRadio());
+        circulo1.setRadio(6.5);
+        System.out.println(circulo1.getRadio());
         System.out.println(circulo1.calcularArea());
-//        System.out.println(circulo1.calcularPerimetro());
+        System.out.println(circulo1.calcularPerimetro());
     }
     
 }
